@@ -1,11 +1,16 @@
-// Называем переменные
-let userinfo = document.querySelector('.input');
-let paragraph = document.querySelector('.para');
-let form = document.querySelector('.form');
+// Первая часть задания
+let year = prompt('В каком году была опубликована спецификация ECMAScript-2015?', '');
+let result = (year < 2015) ? 'Это слишком рано...' : (year > 2015) ? 'Это поздновато' : 'Верно!';
+alert(result);
 
-//Функция: при отправке формы меняется текстовка параграфа
-form.onsubmit = function (evt) {
-    paragraph.textContent = userinfo.value;
-};
-//Задачка по приоритетам
-console.log( 55 * (7 + 2) / (4 + 2) );
+// Вторая часть задания
+let age = prompt('Возраст?', 18);
+if (age < 3) {
+    alert('Здравствуй, малыш!');
+} else if (age < 18) {
+    alert('Привет!');
+} else if (age < 100) {
+    alert('Здравствуйте!')
+} else {
+    alert('Какой необычный возраст!');
+}
