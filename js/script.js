@@ -1,13 +1,11 @@
 // Называем переменные
-let page = document.querySelector('.page');
-let lightButton = document.querySelector('.light-button');
-let message = document.querySelector('.message');
+let userinfo = document.querySelector('.input');
+let paragraph = document.querySelector('.para');
+let form = document.querySelector('.form');
 
-console.log(document.querySelector('.page')); //Выводим класс с селектором .page
-page.classList.add('second-page'); //Добавляем новый класс
-//Функция: при нажатии на lightButton появляется сообщенеие об успешном нажатии
-lightButton.onclick = function () {
-    console.log('Кнопка нажата!');
+//Функция: при отправке формы меняется текстовка параграфа
+form.onsubmit = function (evt) {
+    paragraph.textContent = userinfo.value;
 };
-//Выводим текстовое значение из message в консоль
-console.log(message.textContent);
+//Задачка по приоритетам
+console.log( 55 * (7 + 2) / (4 + 2) );
